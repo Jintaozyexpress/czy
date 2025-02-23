@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>金涛💕紫彦</title>
+    <meta name="key">
+    <meta>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="https://cdn.jintao.us.kg/source/icon.png" type="image/x-icon">
+</head>
+
+<body>
+    <!-- 欢迎词 -->
+    <div class="welcome">
+        <div class="welcome-word">
+            金涛💕紫彦
+        </div>
+    </div>
+    <!--  诗词-->
+    <div id="quoteContainer" class="quoteContainer"> <!-- 父级容器 -->
+        <div id="quote"></div> <!-- 用于显示名言 -->
+        <div id="author"></div> <!-- 用于显示作者 -->
+    </div>
+
+    <!-- 碎碎念 -->
+    <div id="content-container" class="clock"></div> <!-- 用于容纳渲染后的内容 -->
+    <canvas class="canvas" id="myCanvas"></canvas>
+    <!-- 音乐可视化 -->
+    <audio id="music-play" loop></audio>
+    <div class="loading"></div>
+    <strong>
+        <div class="loadtime"></div>
+    </strong>
+
+    <!-- 容器 -->
+    <div class="rongqi">
+        <!-- 天气 -->
+        <div class="weather-container">
+            <img src="" alt="" class="weather-icon">
+            <div class="weatherword">
+                <div id="weather-text"></div>
+                <div id="weather-temp"></div>
+            </div>
+        </div>
+        <!-- 可爱的头像 -->
+        <img src="https://cdn.jintao.us.kg/source/user.webp" alt="头像" id="music" style="cursor: pointer;" title="执子之手"
+            class="img-user playable">
+        <audio id="audio" src="https://cdn.jintao.us.kg/source/zzzs.m4a" preload="auto" loop></audio>
+        <!-- 桌面端卡片 -->
+        <div class="card-container-01 playable" title="Love Story">
+            <div class="card1">
+                <div class="face front"><img src="https://cdn.jintao.us.kg/source/card-01.png" alt="" srcset=""></div>
+                <div class="face back">FROM TIME <br>2024-12-12</div>
+                <audio src="https://cdn.jintao.us.kg/source/love story.m4a" loop></audio>
+            </div>
+        </div>
+
+        <div class="card-container-02 playable">
+            <div class="card1" title="唯一">
+                <div class="face front"><img src="https://cdn.jintao.us.kg/source/card-2.webp" alt="" srcset=""></div>
+                <div class="face back">
+                    <div id="record-time"></div>
+                </div>
+                <audio src="https://cdn.jintao.us.kg/source/weiyi.m4a" loop></audio>
+            </div>
+        </div>
+        <div class="control">
+            <button id="previous-week">上一周</button>
+            <button id="next-week">下一周</button><br>
+            <button id="more" onclick="window.open('more.html', '_blank')">更多</button>
+        </div>
+    </div>
+
+    <div id="updateBanner">
+        <span id="bannerMessage">页面更新啦！</span>
+        <button id="closeBanner">知道了</button>
+    </div>
+    <!-- js注入 -->
+    <script src="js/weather.js"></script>
+    <script src="js/music.js"></script>
+    <script src="js/word.js"></script>
+    <script src="js/control.js"></script>
+    <script src="js/time.js"></script>
+    <script src="js/every.js"></script>
+    <script src="js/play.js"></script>
+    <script src="js/load.js"></script>
+    <script src="js/alart.js"></script>
+</body>
+
+</html>
